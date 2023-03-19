@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio Sylvain De Martini</title>
+    <meta
+      name="description"
+      content="Consultez mon portfolio de développeur front-end pour voir mes réalisations et mes compétences en matière de développement web HTML5 CSS3 JavaScript React SEO responsive" />
+    <link rel="icon" href="images/icon_web/browser.png" type="image/x-icon" />
+  </head>
+
+  <body>
+    <header>
+      <!--naviguation-->
+      <nav>
+        <ul>
+          <li><a href="#">Acceuil</a></li>
+          <li>
+            <a href="#presentation"><span>Qui suis-je</span></a>
+          </li>
+          <li>
+            <a href="#networking"><span>Réalisations</span></a>
+          </li>
+          <li>
+            <a href="#CV2"><span>CV</span></a>
+          </li>
+          <li>
+            <a href="#contact"><span>(Contactez-moi)</span></a>
+          </li>
+          <li>
+            <a href="#theme"><span>(Dark)</span></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!--hero landing-->
+    <section id="hero">
+      <div class="half-width">
+        <h1>Bienvenue!</h1>
+        <h2 class="name-portfolio">
+          <span class="gold">Sylvain De Martini</span> Portfolio
+        </h2>
+        <h2 class="job">Développeur Web Front-End</h2>
+        <h3 class="skill-text">
+          Mes compétences en développement web front-end sont à votre
+          disposition pour créer des sites web qui répondent aux besoins de
+          votre entreprise et atteignent les attentes de vos clients.
+        </h3>
+        <a id="CV1" href="/images/CV.pdf" download>Téléchargez mon CV</a>
+      </div>
+      <div class="half-width">
+        <img
+          src="/images/screen3.jpg"
+          alt="écran d'un pc de développeur web avec un mug posé devant" />
+      </div>
+    </section>
+    <section id="presentation">
+      <div class="half-width">
+        <h2 class="presentation-title">Je me présente</h2>
+        <h3 class="text">
+          Je me suis intéressé au développement web il y a trois ans. J'ai
+          effectué toute ma carrière dans l'hotellerie-restauration ce qui m'a
+          permis de voyager (voir mon CV), puis les évenements de fin 2019 ont
+          fait que par la suite j'ai commencé à me renseigner sur le métier de
+          développeur web front-end. En 2022, j'ai découvert OpenClassrooms et
+          leur formation diplomante "Développeur Web". Cela faisait quelque
+          temps que je songeais à me reconvertir. J'ai donc décidé de franchir
+          le cap, et me voici prêt pour cette nouvelle aventure.
+        </h3>
+      </div>
+      <div class="half-width">
+        <h2 class="presentation-title">Mon objectif</h2>
+        <h3 class="text">
+          Mon objectif est de créer des interfaces utilisateur réactives et
+          attrayantes tout en optimisant les performances et la compatibilité
+          multi-plateforme. Je suis également attentif à l'accessibilité et je
+          suis en constante recherche d'amélioration de mes compétences et de
+          mes pratiques de développement. Je suis prêt à travailler en équipe
+          pour garantir que les objectifs de l'entreprise soient atteints et que
+          les résultats soient de haute qualité.
+        </h3>
+        <p></p>
+      </div>
+    </section>
+
+    <!--skills container-->
+    <section class="skills">
+      <h2 id="skills_main_title">Hard Skills</h2>
+      <div class="skills-container">
+        <div class="skill">
+          <img src="images/logo_skills/html5.png" alt="logo html5" />
+          <h3 class="skill-title">HTML5</h3>
+        </div>
+        <div class="skill">
+          <img src="images/logo_skills/css.png" alt="logo css3" />
+          <h3 class="skill-title">CSS3</h3>
+        </div>
+        <div class="skill">
+          <img src="images/logo_skills/js.png" alt="logo javascript" />
+          <h3 class="skill-title">Javascript</h3>
+        </div>
+        <div class="skill">
+          <img src="images/logo_skills/nodejs.png" alt="logo node.js" />
+          <h3 class="skill-title">Node JS</h3>
+        </div>
+        <div class="skill">
+          <img src="images/logo_skills/react.png" alt="logo react" />
+          <h3 class="skill-title">React</h3>
+        </div>
+        <div class="skill">
+          <img src="images/logo_skills/mongo.png" alt="logo mongodb" />
+          <h3 class="skill-title">Mongodb</h3>
+        </div>
+        <div class="skill">
+          <img src="images/logo_skills/github.png" alt="logo github" />
+          <h3 class="skill-title">Github</h3>
+        </div>
+        <div class="skill">
+          <img src="images/logo_skills/responsive.png" alt="logo responsive" />
+          <h3 class="skill-title">Responsive</h3>
+        </div>
+        <div class="skill">
+          <img src="images/logo_skills/SEO.png" alt="logo SEO" />
+          <h3 class="skill-title">SEO</h3>
+        </div>
+      </div>
+    </section>
+
+    <!--mes-réalisations-->
+
+    <section id="networking">
+      <h2 class="networking-title">Mes réalisations</h2>
+      <div class="networking-container">
+        <!-- Carte 1 -->
+        <div class="card">
+          <div class="project-img">
+            <img
+              src="/images/logo_project/booki-site.png"
+              alt="image du site booki" />
+          </div>
+          <div class="card-legend">
+            <h3 class="card-title">Booki</h3>
+            <div class="card-icons">
+              <a class="card-link" href="https://slydeum.github.io/Booki/">
+                <div>
+                  <img src="/images/icon_diverse/see.png" alt="icone voir" />
+                </div>
+              </a>
+              <a class="card-link" href="https://github.com/Slydeum/Booki">
+                <div>
+                  <img
+                    src="/images/icon_diverse/github.png"
+                    alt="logo github" />
+                </div>
+              </a>
+            </div>
+          </div>
+          <p class="project-description">
+            Transformation d'une maquette en site web avec HTML et CSS
+          </p>
+        </div>
+
+        <!--carte 2-->
+        <div class="card">
+          <div class="project-img">
+            <img src="/images/logo_project/ohmyfood.png" alt="logo ohmyfood" />
+          </div>
+          <div class="card-legend">
+            <h3 class="card-title">Ohmyfood</h3>
+            <div class="card-icons">
+              <a class="card-link" href="https://slydeum.github.io/Ohmyfood/">
+                <div>
+                  <img src="/images/icon_diverse/see.png" alt="icone voir" />
+                </div>
+              </a>
+              <a class="card-link" href="https://github.com/Slydeum/Ohmyfood">
+                <div>
+                  <img
+                    src="/images/icon_diverse/github.png"
+                    alt="logo github" />
+                </div>
+              </a>
+            </div>
+          </div>
+          <p class="project-description">
+            Dynamisation une page web avec des animations CSS
+          </p>
+        </div>
+
+        <!-- Carte 3 -->
+        <div class="card">
+          <div class="project-img">
+            <img
+              src="/images/logo_project/la-panthere.png"
+              alt="logo la panthère" />
+          </div>
+          <div class="card-legend">
+            <h3 class="card-title">La panthère</h3>
+            <div class="card-icons">
+              <a
+                class="card-link"
+                href="https://slydeum.github.io/La_panthere/">
+                <div>
+                  <img src="/images/icon_diverse/see.png" alt="icone voir" />
+                </div>
+              </a>
+              <a
+                class="card-link"
+                href="https://github.com/Slydeum/La_panthere">
+                <div>
+                  <img
+                    src="/images/icon_diverse/github.png"
+                    alt="icone github" />
+                </div>
+              </a>
+            </div>
+          </div>
+          <p class="project-description">
+            Optimisation du site web d'une agence de web design
+          </p>
+        </div>
+
+        <!-- carte 4 -->
+        <div class="card">
+          <div class="project-img">
+            <img src="/images/logo_project/kanap.png" alt="logo kanap" />
+          </div>
+          <div class="card-legend">
+            <h3 class="card-title">Kanap</h3>
+            <div class="card-icons">
+              <!--<a class="card-link" href="#">
+                <div>
+                  <img src="/images/icon_diverse/see.png" alt="icone voir" />
+                </div>
+              </a>-->
+              <a class="card-link" href="https://github.com/Slydeum/Kanap">
+                <div>
+                  <img
+                    src="/images/icon_diverse/github.png"
+                    alt="icone github" />
+                </div>
+              </a>
+            </div>
+          </div>
+          <p class="project-description">
+            Construction d'un site d'e-commerce avec JavaScript
+          </p>
+        </div>
+
+        <!--carte 5-->
+        <div class="card">
+          <div class="project-img">
+            <img
+              src="/images/logo_project/piiquante.png"
+              alt="logo piiquante" />
+          </div>
+          <div class="card-legend">
+            <h3 class="card-title">Piiquante</h3>
+            <div class="card-icons">
+              <!--<a class="card-link" href="#">
+                <div>
+                  <img src="/images/icon_diverse/see.png" alt="icone voir" />
+                </div>
+              </a>-->
+              <a class="card-link" href="https://github.com/Slydeum/piiquante">
+                <div>
+                  <img
+                    src="/images/icon_diverse/github.png"
+                    alt="icone github" />
+                </div>
+              </a>
+            </div>
+          </div>
+          <p class="project-description">
+            Création d'une API sécurisée d'une application d'avis gastronomiques
+          </p>
+        </div>
+
+        <!--carte 6-->
+        <div class="card">
+          <div class="project-img">
+            <img src="/images/logo_project/kasa.png" alt="logo kasa" />
+          </div>
+          <div class="card-legend">
+            <h3 class="card-title">Kasa</h3>
+            <div class="card-icons">
+              <!--<a class="card-link" href="https://google.com">
+                <div>
+                  <img src="/images/icon_diverse/see.png" alt="icone voir" />
+                </div>
+              </a>-->
+              <a class="card-link" href="https://github.com/Slydeum/kasa">
+                <div>
+                  <img
+                    src="/images/icon_diverse/github.png"
+                    alt="icone github" />
+                </div>
+              </a>
+            </div>
+          </div>
+          <p class="project-description">
+            Création d'une application web de location immobilière
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div id="CV2">
+      <a class="banner-CV" href="/images/CV.pdf" download>Téléchargez mon CV</a>
+    </div>
+
+    <section id="contact">
+      <h3 class="contact-title">
+        S'il vous plait, remplissez le formulaire de cette section pour me
+        contacter.
+      </h3>
+      <form action="#" method="POST">
+        <h2 class="contact-me">Contactez-moi</h2>
+        <div class="form-name">
+          <label for="name">Nom :</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Votre nom"
+            required
+            pattern="[A-Za-zéèêëîïôöûüàáâäç\- ]+" />
+          <span class="error-msg">
+            Le champ nom ne doit contenir que des lettres, des tirets ou des
+            espaces.🤔</span
+          >
+        </div>
+
+        <div class="form-email">
+          <label for="email">Email :</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Votre email"
+            required
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" />
+          <span class="error-msg"
+            >Le champ email doit contenir une adresse email valide.😐</span
+          >
+        </div>
+
+        <div class="form-message">
+          <label for="message">Message :</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Votre message"
+            required>
+          </textarea>
+          <span class="error-msg">Veuillez bien laisser un message, svp.</span>
+        </div>
+
+        <div class="form-btn">
+          <button class="btn-submit" type="submit">Envoyer</button>
+        </div>
+      </form>
+    </section>
+    <!--<button id="scroll-up-btn">Top</button>-->
+    <div class="construction">Ce site est en cours de construction!!!</div>
+    <footer>
+      <p>© De Martini Sylvain 2023, Portfolio Développeur Web Front-End</p>
+    </footer>
+  </body>
+</html>

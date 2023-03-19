@@ -1,0 +1,446 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0 30px 0 10px;
+    font-size: 22px;
+    color: rgb(87, 87, 87);
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*-----------------------------------naviguation--------------------------------------------*/
+
+nav ul {
+    list-style: none;
+    display: flex;
+    position: fixed;
+    width: 45%;
+    height: 40px;
+    right: 1%;
+    backdrop-filter: blur(10px);
+}
+
+nav ul li {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+    font-size: 24px;
+    border: none;
+}
+
+nav ul li a {
+    display: block;
+    color: rgb(140, 94, 7);
+    padding: 10px 0 0 0;
+    font-weight: bold;
+}
+
+li a:hover {
+    transition: 0.4s;
+    color: rgb(92, 15, 163);
+    border-bottom: 3px solid rgb(92, 15, 163);
+    padding-bottom: 35px;
+}
+
+
+
+/*-------bouton light/dark theme----*/
+
+#theme {
+    color: rgb(140, 94, 7);
+    padding-top: 8px;
+}
+
+#theme:hover {
+    color: rgb(92, 15, 163);
+}
+
+/*--------------------------------Hero-Section----------------------------------------------*/
+
+#hero {
+    width: 100%;
+    height: 820px;
+    z-index: 0;
+}
+
+#hero .half-width {
+    width: 43%;
+    height: 750px;
+    float: left;
+    margin: 20px 0 0 2%;
+    padding: 0 2% 0 2%;
+}
+
+h1 {
+    font-size: 80px;
+    margin-top: 45px;
+}
+
+.gold {
+    color: rgb(140, 94, 7);
+}
+
+.name-portfolio {
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.job {
+    font-size: 40px;
+    margin-top: 40px;
+}
+
+.skill-text {
+    text-align: justify;
+    color: rgb(140, 94, 7);
+    margin: 50px 0 50px 0;
+}
+
+.half-width img {
+    transform: scale(0.9);
+    margin-top: 150px;
+}
+
+#CV1 {
+    width: 60%;
+    height: 65px;
+    font-size: 25px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, lightsalmon, tomato);
+    color: white;
+    border-radius: 50px;
+    margin-top: 60px;
+}
+
+#CV1:hover {
+    color: rgb(92, 15, 163);
+    background: linear-gradient(45deg, tomato, lightsalmon);
+}
+
+/*-----------------------------------Présentation----------------------------------------------*/
+
+#presentation {
+    height: 500px;
+    width: 100%;
+}
+
+#presentation .half-width {
+    width: 40%;
+    height: 450px;
+    float: left;
+    margin: 50px 0 0 100px;
+    justify-content: space-between;
+}
+
+.presentation-title {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 20px 0;
+}
+
+.text {
+    text-align: center;
+    color: rgb(140, 94, 7);
+}
+
+/*----------------------------------------Hard-Skills--------------------------------------*/
+
+.skills {
+    width: 100%;
+    height: 300px;
+    margin-left: 30px;
+}
+
+#skills_main_title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: row;
+    width: 99%;
+    height: 200px;
+    justify-content: space-between;
+    margin: 0 0 0 0;
+}
+
+.skill-title {
+    display: flex;
+    justify-content: center;
+    width: 120px;
+    margin-top: 10px;
+}
+
+.skill {
+    width: 8%;
+    height: 60px;
+}
+
+/*------------------------------Réalisations-----------------------------------------------------*/
+
+.networking-title {
+    margin: 10px 0 30px 0px;
+    font-weight: bold;
+}
+
+#networking {
+    width: 100%;
+    height: 900px;
+    margin: 40px 0 0 2%;
+    padding: 30px 2% 0 4%;
+}
+
+.networking-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 32%;
+    height: 310px;
+    border: 7px solid;
+    border-radius: 50px;
+    margin-bottom: 20px;
+}
+
+.project-img img {
+    width: 100%;
+    height: 150px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.card-legend {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-title {
+    font-size: 26px;
+    margin: 20px 0 0 20px;
+    color: rgb(140, 94, 7);
+}
+
+.card-icons {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    transform: scale(0.7);
+}
+
+.card-link {
+    margin-right: 15px;
+}
+
+.project-description {
+    display: flex;
+    text-align: left;
+    font-size: 24px;
+    margin: 20px 0 0 20px;
+}
+
+/*------------------------CV------------------------------------------*/
+
+#CV2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    font-size: 35px;
+    font-weight: 700;
+    background-image: url('/images/gold.jpg');
+    background-size: 40%;
+}
+
+.banner-CV {
+    width: 100%;
+    height: 300px;
+    font-size: 28px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(40, 39, 39);
+}
+
+.banner-CV:hover {
+    color: rgb(255, 255, 255);
+    background-image: url('/images/screen3.jpg');
+    transform: scale(1.2);
+    font-size: 60px;
+}
+
+/*-----------------------formulaire de contact-------------------------------------------------*/
+
+#contact {
+    width: 100%;
+    height: 700px;
+}
+
+form {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    background: linear-gradient(45deg, lightsalmon, tomato);
+    border-radius: 5px;
+    box-shadow: 0 0 10px #999;
+}
+
+.contact-title {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    margin: 50px 0 30px 50px;
+    padding-top: 50px;
+}
+
+.contact-me {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin: 20px 0 0 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    display: block;
+    width: 95%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 5px #ccc;
+    font-size: 22px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+textarea {
+    width: 100%;
+    height: 120px;
+}
+
+.btn-submit {
+    border: none;
+    border-radius: 50px;
+    width: 160px;
+    height: 45px;
+    background-color: #fff;
+    padding-left: 5px;
+    margin-left: 280px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/*.form-btn {
+    width: 160px;
+    height: 45px;
+    background-color: rgb(140, 94, 7);
+    padding: 10px 20px;
+    margin: 30px 0 0 315px;
+    border: none;
+    border-radius: 50px;
+    font-size: 22px;
+    cursor: pointer;
+}*/
+
+.btn-submit:hover {
+    color: rgb(140, 94, 7);
+    background-color: black;
+    box-shadow: rgb(92, 15, 163) 13px;
+
+}
+
+/*----------message-erreur--------*/
+
+.error-msg {
+    display: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: red;
+}
+
+input:invalid+.error-msg,
+textarea:invalid+.error-msg {
+    display: block;
+}
+
+/*-------------------------------------bouton-scroll-up-------------------------------------------*/
+
+#scroll-up-btn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+/*--------------------------------En_cours de-construction------------------------------------------*/
+
+.construction {
+    width: 110%;
+    height: 95px;
+    background-color: red;
+    font-size: 50px;
+    font-weight: 700;
+    color: black;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/*--------------------------------Footer-------------------------------------------------------*/
+
+footer {
+    /*margin-top: 50px;*/
+    width: 100%;
+    /*height: 50px;*/
+    text-align: center;
+}
+
+/*@media screen and (max-width: 920px) {
+    form .corps-formulaire .droite {
+      margin-left: 0px;
+    }
+  }*/
