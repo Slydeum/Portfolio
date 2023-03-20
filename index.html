@@ -22,21 +22,21 @@
       <!--naviguation-->
       <nav>
         <ul>
-          <li><a href="#">Acceuil</a></li>
+          <li><a href="#" class="slide-link">Acceuil</a></li>
           <li>
-            <a href="#presentation"><span>Qui suis-je</span></a>
+            <a href="#presentation" class="slide-link">Qui suis-je</a>
           </li>
           <li>
-            <a href="#networking"><span>Réalisations</span></a>
+            <a href="#networking" class="slide-link">Réalisations</a>
           </li>
           <li>
-            <a href="#CV2"><span>CV</span></a>
+            <a href="#CV2" class="slide-link">CV</a>
           </li>
           <li>
-            <a href="#contact"><span>(Contactez-moi)</span></a>
+            <a href="#contact" class="slide-link">(Contactez-moi)</a>
           </li>
           <li>
-            <a href="#theme"><span>(Dark)</span></a>
+            <button id="theme-toggle">Thème</button>
           </li>
         </ul>
       </nav>
@@ -46,18 +46,26 @@
     <section id="hero">
       <div class="half-width">
         <h1>Bienvenue!</h1>
-        <h2 class="name-portfolio">
+        <h2 class="title">
           <span class="gold">Sylvain De Martini</span> Portfolio
         </h2>
-        <h2 class="job">Développeur Web Front-End</h2>
-        <h3 class="skill-text">
-          Mes compétences en développement web front-end sont à votre
-          disposition pour créer des sites web qui répondent aux besoins de
-          votre entreprise et atteignent les attentes de vos clients.
-        </h3>
-        <a id="CV1" href="images/CV_De_Martini_Sylvain.pdf" download
-          >Téléchargez mon CV</a
-        >
+        <h2 class="title">
+          <span class="job">développeur Web Front-End</span>
+        </h2>
+        <div class="up">
+          <h3 class="skill-text">
+            Mes compétences en développement web front-end sont à votre
+            disposition pour créer des sites web qui répondent aux besoins de
+            votre entreprise et atteignent les attentes de vos clients.
+          </h3>
+
+          <a id="CV1" href="images/CV_De_Martini_Sylvain.pdf" download
+            >Téléchargez mon CV</a
+          >
+          <a id="mail" href="mailto:sylvaindemartini@gmail.com"
+            >Envoyez-moi un email</a
+          >
+        </div>
       </div>
       <div class="half-width">
         <img
@@ -69,14 +77,16 @@
       <div class="half-width">
         <h2 class="presentation-title">Je me présente</h2>
         <h3 class="text">
-          Je me suis intéressé au développement web il y a trois ans. J'ai
-          effectué toute ma carrière dans l'hotellerie-restauration ce qui m'a
-          permis de voyager (voir mon CV), puis les évenements de fin 2019 ont
-          fait que par la suite j'ai commencé à me renseigner sur le métier de
-          développeur web front-end. En 2022, j'ai découvert OpenClassrooms et
-          leur formation diplomante "Développeur Web". Cela faisait quelque
-          temps que je songeais à me reconvertir. J'ai donc décidé de franchir
-          le cap, et me voici prêt pour cette nouvelle aventure.
+          <span
+            >Je me suis intéressé au développement web il y a trois ans. J'ai
+            effectué toute ma carrière dans l'hotellerie-restauration ce qui m'a
+            permis de voyager (voir mon CV), puis les évenements de fin 2019 ont
+            fait que par la suite j'ai commencé à me renseigner sur le métier de
+            développeur web front-end. En 2022, j'ai découvert OpenClassrooms et
+            leur formation diplomante "Développeur Web". Cela faisait quelque
+            temps que je songeais à me reconvertir. J'ai donc décidé de franchir
+            le cap, et me voici prêt pour cette nouvelle aventure.</span
+          >
         </h3>
       </div>
       <div class="half-width">
@@ -312,8 +322,10 @@
 
     <div id="CV2">
       <a class="banner-CV" href="images/CV_De_Martini_Sylvain.pdf" download
-        >Téléchargez mon CV</a
+        ><span class="CV2">Téléchargez mon CV</span></a
       >
+      <!--<div><img src="images/icon_diverse/github.png" /></div>
+      <div><img src="" /></div>-->
     </div>
 
     <section id="contact">
@@ -367,11 +379,19 @@
           <button class="btn-submit" type="submit">Envoyer</button>
         </div>
       </form>
+      <div>
+        <button id="scrollup-btn">
+          <img
+            src="images/icon_diverse/up-arrow.png"
+            alt="flêche vers le haut" />
+        </button>
+      </div>
     </section>
-    <!--<button id="scroll-up-btn">Top</button>-->
     <div class="construction">Ce site est en cours de construction!!!</div>
     <footer>
       <p>© De Martini Sylvain 2023, Portfolio Développeur Web Front-End</p>
     </footer>
+    <script src="main.js"></script>
+    <script src="scroll.js"></script>
   </body>
 </html>
