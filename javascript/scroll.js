@@ -5,19 +5,19 @@ scrollUpBtn.addEventListener('click', function () {
 });
 
 function scrollUp() {
-  // Obtenez la position actuelle de la page
+  // Obtenir la position actuelle de la page
   let currentPosition =
     window.pageYOffset || document.documentElement.scrollTop;
 
-  // Définir la position à laquelle vous souhaitez déplacer la page
+  // Définir la position à laquelle on souhaite déplacer la page
   let targetPosition = 0;
 
-  // Créez une animation pour déplacer la page
+  // Crée une animation pour déplacer la page
   let animation = setInterval(function () {
-    // Calculer la distance à parcourir à chaque intervalle
+    // Calcule la distance à parcourir à chaque intervalle
     let distance = (targetPosition - currentPosition) / 10;
 
-    // Si la distance est très petite, arrêtez l'animation
+    // Si la distance est très petite, arrête l'animation
     if (Math.abs(distance) < 1) {
       clearInterval(animation);
       window.scrollTo(0, targetPosition);

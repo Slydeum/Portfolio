@@ -144,6 +144,8 @@ h1 {
     margin: 30px 0 0px 0;
 }
 
+/*----------image-----------*/
+
 .half-width img {
     position: relative;
     right: 70px;
@@ -392,7 +394,7 @@ h1 {
     }
 }
 
-/*------------------------CV------------------------------------------*/
+/*----------------bannière--------CV------------------------------------------*/
 
 #CV2 {
     width: 105%;
@@ -562,8 +564,10 @@ footer {
     text-align: center;
 }
 
+
+/*--------------------------------RESPONSIVE------------------------------------------------------*/
+
 /*@media screen and (max-width: 920px) {
-    form .corps-formulaire .droite {
-      margin-left: 0px;
+    
     }
   }*/
